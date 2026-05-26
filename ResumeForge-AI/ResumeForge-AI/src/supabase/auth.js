@@ -17,16 +17,22 @@ export const signIn = async (email, password) => {
 export const signInWithGoogle = async () => {
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: 'google',
-    options: { redirectTo: `${window.location.origin}/dashboard` },
+    options: {
+      redirectTo: window.location.origin,
+    },
   });
+
   return { data, error };
 };
 
 export const signInWithGithub = async () => {
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: 'github',
-    options: { redirectTo: `${window.location.origin}/dashboard` },
+    options: {
+      redirectTo: window.location.origin,
+    },
   });
+
   return { data, error };
 };
 

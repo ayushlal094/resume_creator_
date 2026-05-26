@@ -84,7 +84,7 @@ const Builder = () => {
       saveResume(user.id, resumeData.personal?.fullName ? `${resumeData.personal.fullName}'s Resume` : 'My Resume');
     }, 3000);
     return () => clearTimeout(timer);
-  }, [resumeData, isDirty, user]);
+  }, [resumeData, isDirty, user, saveResume]);
 
   const toggle = (id) => setOpenSection((prev) => (prev === id ? null : id));
 

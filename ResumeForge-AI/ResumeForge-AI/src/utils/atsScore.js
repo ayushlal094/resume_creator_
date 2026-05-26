@@ -86,6 +86,7 @@ export const calculateATSScore = (resumeData) => {
 
   const foundKeywords = ATS_KEYWORDS.filter((kw) => fullText.includes(kw));
   const keywordScore = Math.min(foundKeywords.length * 2, 10);
+  score += keywordScore;
 
   return {
     score: Math.min(score, 100),

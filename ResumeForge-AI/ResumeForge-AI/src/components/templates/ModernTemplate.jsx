@@ -13,7 +13,7 @@ const ModernTemplate = ({ data }) => {
   const { personal = {}, summary, education = [], skills = [], experience = [], projects = [], certifications = [], achievements = [], languages = [], interests = [] } = data || {};
 
   return (
-    <div id="resume-preview" className="bg-white text-gray-900 font-['Georgia',serif] text-[11px] leading-relaxed w-full min-h-[297mm] p-8">
+    <div className="bg-white text-gray-900 font-['Georgia',serif] text-[11px] leading-relaxed w-full min-h-[297mm] p-8">
       {/* Header */}
       <div className="mb-6">
         <div className="flex items-start justify-between gap-4">
