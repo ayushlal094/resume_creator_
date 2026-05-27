@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { User, Mail, Phone, MapPin, LinkedinIcon, GithubIcon, Globe, Camera, X } from 'lucide-react';
+import { User, Mail, Phone, MapPin, Linkedin, Github, Globe, Camera, X } from 'lucide-react';
 import { useResumeStore } from '../../context/ResumeContext';
 
 const Field = ({ icon: Icon, label, name, value, onChange, type = 'text', placeholder }) => (

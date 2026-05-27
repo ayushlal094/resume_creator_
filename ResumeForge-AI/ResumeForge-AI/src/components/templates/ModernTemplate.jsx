@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, LinkedinIcon, GithubIcon, Globe } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github, Globe } from 'lucide-react';
 
 const Section = ({ title, children }) => (
   <div className="mb-5">
@@ -13,7 +13,7 @@ const ModernTemplate = ({ data }) => {
   const { personal = {}, summary, education = [], skills = [], experience = [], projects = [], certifications = [], achievements = [], languages = [], interests = [] } = data || {};
 
   return (
-    <div className="bg-white text-gray-900 font-['Georgia',serif] text-[11px] leading-relaxed w-full min-h-[297mm] p-8">
+    <div id="resume-preview" className="bg-white text-gray-900 font-['Georgia',serif] text-[11px] leading-relaxed w-full min-h-[297mm] p-8">
       {/* Header */}
       <div className="mb-6">
         <div className="flex items-start justify-between gap-4">

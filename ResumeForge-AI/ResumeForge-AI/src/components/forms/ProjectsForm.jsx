@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Layers, Plus, Trash2, ChevronDown, GithubIcon, Globe } from 'lucide-react';
+import { Layers, Plus, Trash2, ChevronDown, Github, Globe } from 'lucide-react';
 import { useResumeStore } from '../../context/ResumeContext';
 
 const emptyProject = { title: '', technologies: '', github: '', demo: '', description: '' };
