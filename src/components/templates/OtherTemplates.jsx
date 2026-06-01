@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Github, Globe } from 'lucide-react';
+import { Mail, Phone, MapPin, Globe } from 'lucide-react';
 
 // ── Minimal Template ──────────────────────────────────────
 

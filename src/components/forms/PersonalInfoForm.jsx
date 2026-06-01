@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { User, Mail, Phone, MapPin, LinkedinIcon, GithubIcon, Globe, Camera, X } from 'lucide-react';
+import { User, Mail, Phone, MapPin, ExternalLink, Code, Globe, Camera, X } from 'lucide-react';
 import { useResumeStore } from '../../context/ResumeContext';
 
 const Field = ({ icon: Icon, label, name, value, onChange, type = 'text', placeholder }) => (
@@ -92,8 +92,8 @@ const PersonalInfoForm = () => {
         <Field icon={Mail} label="Email" name="email" value={personal.email} onChange={handleChange} type="email" placeholder="alex@example.com" />
         <Field icon={Phone} label="Phone" name="phone" value={personal.phone} onChange={handleChange} type="tel" placeholder="+1 (555) 000-0000" />
         <Field icon={MapPin} label="Location" name="address" value={personal.address} onChange={handleChange} placeholder="San Francisco, CA" />
-        <Field icon={Linkedin} label="LinkedIn" name="linkedin" value={personal.linkedin} onChange={handleChange} placeholder="linkedin.com/in/alexjohnson" />
-        <Field icon={Github} label="GitHub" name="github" value={personal.github} onChange={handleChange} placeholder="github.com/alexjohnson" />
+        <Field icon={ExternalLink} label="LinkedIn" name="linkedin" value={personal.linkedin} onChange={handleChange} placeholder="linkedin.com/in/alexjohnson" />
+        <Field icon={Code} label="GitHub" name="github" value={personal.github} onChange={handleChange} placeholder="github.com/alexjohnson" />
         <Field icon={Globe} label="Portfolio" name="portfolio" value={personal.portfolio} onChange={handleChange} placeholder="alexjohnson.dev" />
       </div>
     </motion.div>

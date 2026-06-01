@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, LinkedinIcon, GithubIcon, Globe } from 'lucide-react';
+import { Mail, Phone, MapPin, ExternalLink, Code, Globe } from 'lucide-react';
 
 const Section = ({ title, children }) => (
   <div className="mb-5">
@@ -35,10 +35,10 @@ const ModernTemplate = ({ data }) => {
                 <span className="flex items-center gap-1"><MapPin size={9} />{personal.address}</span>
               )}
               {personal.linkedin && (
-                <span className="flex items-center gap-1"><Linkedin size={9} />{personal.linkedin}</span>
+                <span className="flex items-center gap-1"><ExternalLink size={9} />{personal.linkedin}</span>
               )}
               {personal.github && (
-                <span className="flex items-center gap-1"><Github size={9} />{personal.github}</span>
+                <span className="flex items-center gap-1"><Code size={9} />{personal.github}</span>
               )}
               {personal.portfolio && (
                 <span className="flex items-center gap-1"><Globe size={9} />{personal.portfolio}</span>

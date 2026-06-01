@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Layers, Plus, Trash2, ChevronDown, GithubIcon, Globe } from 'lucide-react';
+import { Layers, Plus, Trash2, ChevronDown, Code, Globe } from 'lucide-react';
 import { useResumeStore } from '../../context/ResumeContext';
 
 const emptyProject = { title: '', technologies: '', github: '', demo: '', description: '' };
@@ -44,7 +44,7 @@ const ProjectEntry = ({ entry, index, onChange, onRemove }) => {
                 <div>
                   <label className="label">GitHub Link</label>
                   <div className="relative">
-                    <Github size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" />
+                    <Code size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" />
                     <input type="url" name="github" value={entry.github} onChange={handle} placeholder="github.com/user/repo" className="input-field pl-9" />
                   </div>
                 </div>

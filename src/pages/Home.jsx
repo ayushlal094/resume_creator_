@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   ArrowRight, Target, Eye, Download, Layers, Moon, Cloud,
-  Zap, BarChart2, Star, Check, ChevronRight, Sparkles
+  Zap, BarChart2, Check, ChevronRight, Sparkles
 } from 'lucide-react';
 import { FEATURES, TEMPLATES } from '../utils/constants';
 
@@ -226,30 +226,6 @@ const Home = () => (
               <Link to="/templates" className="btn-secondary text-sm px-6 py-3.5 justify-center">
                 Explore Templates
               </Link>
-            </motion.div>
-
-            {/* Social proof */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="flex items-center gap-4"
-            >
-              <div className="flex -space-x-2">
-                {['#565449', '#8A8679', '#D8CFBC', '#11120D', '#4A4840'].map((c, i) => (
-                  <div key={i} className="w-8 h-8 rounded-full border-2 border-[var(--surface-1)] flex items-center justify-center text-[10px] font-bold text-white" style={{ background: c }}>
-                    {String.fromCharCode(65 + i)}
-                  </div>
-                ))}
-              </div>
-              <div>
-                <div className="flex items-center gap-1 mb-0.5">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} size={12} className="text-amber-400 fill-amber-400" />
-                  ))}
-                </div>
-                <p className="text-xs text-[var(--text-muted)]">Trusted by <strong className="text-[var(--text-primary)]">10,000+</strong> job seekers</p>
-              </div>
             </motion.div>
           </div>
 
